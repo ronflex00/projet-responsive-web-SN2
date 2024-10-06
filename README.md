@@ -32,7 +32,7 @@
 
 ``` bash
 # Cloner le dépôt GitHub
-$ git clone https://github.com/ronflex00/projet-responsive-web-design-SN2.git 
+$ git clone https://github.com/ronflex00/projet-responsive-web-SN2.git 
 
 # Accéder au répertoire du projet
 $ projet-responsive-web-design-SN2
