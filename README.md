@@ -67,7 +67,7 @@ CoreUI Icons are beautifully crafted symbols for common actions and items. You c
 
 ``` bash
 # Cloner le dépôt GitHub
-$ git clone https://github.com/ronflex00/projet-responsive-web-design-SN2git 
+$ git clone https://github.com/ronflex00/projet-responsive-web-design-SN2.git 
 
 # Accéder au répertoire du projet
 $ projet-responsive-web-design-SN2
