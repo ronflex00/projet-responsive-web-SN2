@@ -1,4 +1,4 @@
-# Projet responsive web design
+# projet-responsive-web-design-SN2
 
 
 ## Liste des pages maquettés
@@ -67,10 +67,10 @@ CoreUI Icons are beautifully crafted symbols for common actions and items. You c
 
 ``` bash
 # Cloner le dépôt GitHub
-$ git clone https://github.com/ronflex00/projet-responsive-web-design.git 
+$ git clone https://github.com/ronflex00/projet-responsive-web-design-SN2git 
 
 # Accéder au répertoire du projet
-$ projet-responsive-web-design
+$ pprojet-responsive-web-design-SN2
 
 # Utilisez npm pour installer les packages nécessaires :
 $ npm install
