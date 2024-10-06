@@ -1,41 +1,33 @@
-# CoreUI Free Bootstrap Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%20Bootstrap%204%20Admin%20Template%20&url=https://coreui.io&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
+# Projet responsive web design
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![@coreui coreui](https://img.shields.io/badge/@coreui%20-coreui-lightgrey.svg?style=flat-square)](https://github.com/coreui/coreui)
-[![npm package][npm-coreui-badge]][npm-coreui]
-[![NPM downloads][npm-coreui-download]][npm-coreui]
 
-[npm-coreui]: https://www.npmjs.com/package/@coreui/coreui
-[npm-coreui-badge]: https://img.shields.io/npm/v/@coreui/coreui.png?style=flat-square
-[npm-coreui-download]: https://img.shields.io/npm/dm/@coreui/coreui.svg?style=flat-square
+## Liste des pages maquettés
+ acceuil.html
+ 
+ actualités.html
+ 
+ analytique.html
+ 
+ baseannonces.html
+ 
+ baseclients.html
+ 
+ calendrier.html
+ 
+ centre de contact.html
+ 
+ chat et appel.html
+ 
+ login1.html
+ 
+ mes ventes.html
+ 
+ mot-de-passe-oublie.html
 
-[![Bootstrap Admin Template](https://assets.coreui.io/products/coreui-free-bootstrap-admin-template-light-dark.webp)](https://coreui.io/product/free-bootstrap-admin-template/)
-
-CoreUI Bootstrap Admin Panel Template is not another blend of 3rd parties free components and libraries. It's **the only Open Source Bootstrap Admin Dashboard Template built on the enterprise-grade hand-crafted [UI Components Library](https://github.com/coreui/coreui)** created and backed by professionals.
-**CoreUI Admin Template helps you build reliable web apps faster than before.** CoreUI offers 4 versions: [Angular](https://github.com/coreui/coreui-free-angular-admin-template), [Bootstrap](https://github.com/coreui/coreui-free-bootstrap-admin-template), [React.js](https://github.com/coreui/coreui-free-react-admin-template), and [Vue.js](https://github.com/coreui/coreui-free-vue-admin-template).
-
-Curious why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Bootstrap Admin Templates suck.](https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
-
-## Table of Contents
-
-* [Frameworks](#frameworks)
-* [CoreUI PRO](#coreui-pro)
-* [CoreUI PRO Bootstrap Admin Templates](#coreui-pro-bootstrap-admin-templates)
-* [Installation](#installation)
-* [Usage](#usage)
-* [What's included](#whats-included)
-* [Documentation](#documentation)
-* [Components](#components)
-* [Contributing](#contributing)
-* [Versioning](#versioning)
-* [Creators](#creators)
-* [Community](#community)
-* [Support CoreUI Development](#support-coreui-development)
-* [Copyright and license](#copyright-and-license)
 
 ## Frameworks
 
-CoreUI is built on top of Bootstrap 5 and supports popular frameworks.
+
 
 * [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
 * [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
@@ -74,63 +66,27 @@ CoreUI Icons are beautifully crafted symbols for common actions and items. You c
 ### Clone repo
 
 ``` bash
-# clone the repo
-$ git clone https://github.com/coreui/coreui-free-bootstrap-admin-template.git my-project
+# Cloner le dépôt GitHub
+$ git clone https://github.com/ronflex00/projet-responsive-web-design.git 
 
-# go into app's directory
-$ cd my-project
+# Accéder au répertoire du projet
+$ projet-responsive-web-design
 
-# install app's dependencies
+# Utilisez npm pour installer les packages nécessaires :
 $ npm install
 ```
 
-## Usage
+## Démarrer le projet
 
 ``` bash
-# serve with hot reload at localhost:3000.
+# Une fois les dépendances installées, démarrez le projet en utilisant :
 $ npm start
 
-# build for production with minification
-$ npm run build
-```
+#Cela lancera le serveur de développement, et vous pourrez accéder au site via http://localhost:3000 dans votre navigateur.
 
-## What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
-```
-free-bootstrap-admin-template/
-├── build/
-├── src/
-│   ├── assets/
-│   │   ├── brand/
-│   │   ├── favicon/
-│   │   ├── icons/
-│   │   ├── img/
-│   ├── js/
-│   ├── pug/
-│   │   ├── _layout/
-│   │   ├── _partial/
-│   │   ├── base/
-│   │   ├── buttons/
-│   │   ├── icons/
-│   │   ├── notifications/
-│   │   ├── ...
-│   │   ├── index.pug
-│   │   └── ...
-│   ├── scss/
-│   ├── vendors/
-│   └── views/
-│       ├── base/
-│       ├── buttons/
-│       ├── css/
-│       ├── icons/
-│       ├── notifications/
-│       ├── ...
-│       ├── index.html
-│       └── ...
-└── package.json
-```
+
 
 ## Documentation
 
@@ -187,47 +143,3 @@ CoreUI Bootstrap Admin Templates are built on top of CoreUI and CoreUI PRO UI co
 - [Bootstrap Toast](https://coreui.io/bootstrap/docs/components/toast/)
 - [Bootstrap Tooltip](https://coreui.io/bootstrap/docs/components/tooltip/)
 
-## Contributing
-
-Please read through our [contributing guidelines](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Editor preferences are available in the [editor config](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
-
-## Versioning
-
-For transparency into our release cycle and in striving to maintain backward compatibility,CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
-
-See [the Releases section of our project](https://github.com/coreui/coreui-free-bootstrap-admin-template/releases) for changelogs for each release version.
-
-## Creators
-
-**Łukasz Holeczek**
-
-* <https://twitter.com/lukaszholeczek>
-* <https://github.com/mrholek>
-
-**Andrzej Kopański**
-
-* <https://github.com/xidedix>
-
-**CoreUI Team**
-
-* <https://twitter.com/core_ui>
-* <https://github.com/coreui>
-* <https://github.com/orgs/coreui/people>
-
-## Community
-
-Get updates on CoreUI's development and chat with the project maintainers and community members.
-
-- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
-- Read and subscribe to [CoreUI Blog](https://coreui.io/blog/).
-
-## Support CoreUI Development
-
-CoreUI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [CoreUI PRO](https://coreui.io/pricing/?framework=bootstrap&src=github-coreui-free-bootstrap-admin-template) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
-
-
-## Copyright and license
-
-copyright 2024 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE).
