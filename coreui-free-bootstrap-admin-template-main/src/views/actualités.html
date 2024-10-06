@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>CoreUI Free Bootstrap Admin Template</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Vendors styles-->
+  <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+  <link rel="stylesheet" href="css/vendors/simplebar.css">
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- We use those styles to show code examples, you should remove them in your application.-->
+  <link href="css/examples.css" rel="stylesheet">
+  <script src="js/config.js"></script>
+  <script src="js/color-modes.js"></script>
+  <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+</head>
+<body>
+   <!-- Sidebar -->
+   <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+    <div class="sidebar-header border-bottom">
+        <div class="sidebar-brand">
+            <img src="https://as1.ftcdn.net/jpg/01/33/02/12/500_F_133021203_NJgDvp6pjkYpKGrleHyuYj6zWmtfrtI5.jpg"
+                alt="Logo" width="50" height="60">
+        </div>
+        <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark"
+            aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()"></button>
+    </div>
+
+    <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+        <li class="nav-item"><a class="nav-link" href="index.html">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+                </svg> Actualités</a></li>
+        <li class="nav-title">Base de données</li>
+        <li class="nav-item"><a class="nav-link" href="base_clients.html">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+                </svg> Base Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="base_annonces.html">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                </svg> Base Annonces</a></li>
+        <li class="nav-title">Mon Compte</li>
+        <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+                </svg> Mes Ventes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                </svg> Chats et Appels</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                </svg> Calendrier</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                </svg> Centre de Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="nav-icon">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                </svg> Analytique</a></li>
+    </ul>
+</div>
+
+<!-- Main Content Wrapper -->
+<div class="wrapper d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <header class="header header-sticky p-0 mb-4">
+        <div class="container-fluid border-bottom px-4">
+            <button class="header-toggler" type="button"
+                onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+                <svg class="icon icon-lg">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+                </svg>
+            </button>
+            <ul class="header-nav d-none d-lg-flex"></ul>
+            <ul class="header-nav">
+                <li class="nav-item py-1">
+                    <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button"
+                        aria-expanded="false" data-coreui-toggle="dropdown">
+                        <svg class="icon icon-lg theme-icon-active">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center" type="button"
+                                data-coreui-theme-value="light">
+                                <svg class="icon icon-lg me-3">
+                                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                                </svg> Light
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center" type="button"
+                                data-coreui-theme-value="dark">
+                                <svg class="icon icon-lg me-3">
+                                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                                </svg> Dark
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item d-flex align-items-center active" type="button"
+                                data-coreui-theme-value="auto">
+                                <svg class="icon icon-lg me-3">
+                                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                                </svg> Auto
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#">
+                        <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg"
+                                alt="Profil utilisateur"></div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end pt-0">
+                        <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2">Mon Compte
+                        </div>
+                        <a class="dropdown-item" href="#">
+                            <svg class="icon me-2">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                            </svg> Notifications <span class="badge badge-sm bg-success ms-2">10</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <svg class="icon me-2">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+                            </svg> Chat et Appels <span class="badge badge-sm bg-danger ms-2">42</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <svg class="icon me-2">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+                            </svg> Calendrier <span class="badge badge-sm bg-warning ms-2">42</span>
+                        </a>
+                        <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold my-2">Settings</div>
+                        <a class="dropdown-item" href="#">
+                            <svg class="icon me-2">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                            </svg> Profil
+                        </a>
+                        <a class="dropdown-item" href="login1.html">
+                            <svg class="icon me-2">
+                                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                            </svg> Se Déconnecter
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid px-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb my-0">
+                    <li class="breadcrumb-item"><a href="acceuil.html">Acceuil</a></li>
+                    <li class="breadcrumb-item"><a href="actualités.html">Actualités</a></li>
+                    <li class="breadcrumb-item"><a href="baseclients.html">Base Clients</a></li>
+                    <li class="breadcrumb-item"><a href="baseannonces.html">Base Annonces</a></li>
+                    <li class="breadcrumb-item"><a href="chat et appel.html">Chat et Appels</a></li>
+                    <li class="breadcrumb-item"><a href="calendrier.html">Calendrier</a></li>
+                    <li class="breadcrumb-item"><a href="mes ventes.html">Mes Ventes</a></li>
+                    <li class="breadcrumb-item"><a href="centre de contact.html">Centre de Contact</a></li>
+                    <li class="breadcrumb-item"><a href="analytique.html">Analytique</a></li>
+                </ol>
+            </nav>
+                
+            </ol>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Actualités</h2>
+
+      <!-- Carrousel d'images -->
+      <div id="newsCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="image/images (14).jpeg" class="d-block w-100" alt="Image 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="image/images (13).jpeg" class="d-block w-100" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="image/images (12).jpeg" class="d-block w-100" alt="Image 3">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Précédent</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Suivant</span>
+          </button>
+      </div>
+
+      <!-- Articles de Blog -->
+      <h3 class="mb-3">Derniers Articles</h3>
+
+      <div class="row">
+          <div class="col-md-4 article">
+              <img src="image/images (15).jpeg" alt="Article 1">
+              <div class="article-title">1. Le marché immobilier en France en 2024 : Quelles tendances ?</div>
+              <div class="article-date">12 octobre 2024</div>
+              <p>
+                Le marché immobilier en France continue d'évoluer en 2024, avec des tendances marquées par une demande croissante pour des biens en périphérie des grandes villes. En raison du télétravail et de la recherche d'une meilleure qualité de vie, de plus en plus de Français se tournent vers des maisons avec jardin ou des appartements spacieux, loin du centre-ville.
+                
+                </p>
+              <a href="#" class="btn btn-primary btn-read-more">Lire la suite</a>
+          </div>
+          <div class="col-md-4 article">
+              <img src="image/images (1).png" alt="Article 2">
+              <div class="article-title">2. Pourquoi investir dans l’immobilier locatif en France ?</div>
+              <div class="article-date">10 octobre 2024</div>
+              <p>
+                Investir dans l'immobilier locatif en France offre plusieurs avantages, notamment la stabilité du marché et des dispositifs fiscaux avantageux tels que la loi Pinel. Ce dispositif permet aux investisseurs de bénéficier de réductions d'impôts tout en constituant un patrimoine immobilier. En outre, les villes de taille moyenne comme Nantes, Lille ou Montpellier attirent de plus en plus d’investisseurs grâce à leur dynamisme économique et culturel.
+            </p>
+            <a href="#" class="btn btn-primary btn-read-more">Lire la suite</a>
+                
+          </div>
+          <div class="col-md-4 article">
+              <img src="image/images (9).jpeg" alt="Article 3">
+              <div class="article-title">3. Acheter ou louer en 2024 : Quels sont les avantages et les inconvénients ?</div>
+              <div class="article-date">8 octobre 2024</div>
+              <p>
+                Le dilemme entre acheter ou louer un bien immobilier en 2024 continue de poser des questions aux ménages français. Acheter permet de devenir propriétaire, de ne plus avoir à payer de loyer, et surtout de se constituer un patrimoine. Avec des taux d’intérêt encore relativement accessibles, c’est une option envisageable pour beaucoup, surtout dans des villes où les prix de l’immobilier sont stables.
+              </p> 
+
+                
+                </p>
+              <a href="#" class="btn btn-primary btn-read-more">Lire la suite</a>
+          </div>
+          <!-- Ajoutez plus d'articles ici -->
+      </div>
+
+      <!-- Section de pagination ou plus d'articles -->
+      <div class="text-center mt-4">
+          <a href="#" class="btn btn-secondary">Voir plus d'articles</a>
+      </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="footer px-4">
+      <div class="d-flex justify-content-between">
+        <span>&copy; 2024 Epsi. Tous droits réservés.</span>
+        <span>Développé par l'équipe Tech</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
